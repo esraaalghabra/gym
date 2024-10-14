@@ -18,7 +18,7 @@ export const Navbar = ({selectedPage, isTopOfPage, setSelectedPage}: Props) => {
     const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
     const isAboveMediumScreen = useMediaQuery("(min-width: 1060px)");
     const navBackground = isTopOfPage ? "" : "bg-primary-100 drop-shadow";
-  return (
+return (
     <nav>
         <div className = {`${navBackground} ${flexBetween} fixed top-0 z-30 w-full py-6`}>
             <div className={`${flexBetween} m-auto w-5/6`}>
@@ -69,5 +69,5 @@ export const Navbar = ({selectedPage, isTopOfPage, setSelectedPage}: Props) => {
             </div>
         )}
     </nav>
-  )
+)
 }
